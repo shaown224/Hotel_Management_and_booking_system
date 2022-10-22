@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Customer.Customerdeshboard">
+    <children>
+        <ImageView fitHeight="488.0" fitWidth="730.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Image/photo-1561501900-3701fa6a0864.jpeg" />
+            </image>
+        </ImageView>
+        <Text fill="#ff5733" layoutX="140.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Sunset Lodge" textAlignment="CENTER" wrappingWidth="450.13671875">
+            <font>
+                <Font name="Serif Regular" size="35.0" />
+            </font>
+        </Text>
+        <Button fx:id="closeBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="289.0" layoutY="389.0" mnemonicParsing="false" onAction="#ClosebtnAction" prefHeight="38.0" prefWidth="152.0" style="-fx-background-color: #FF5733;" text="Close" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Georgia" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="ContactBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="289.0" layoutY="309.0" mnemonicParsing="false" onAction="#ContactBtnAction" prefHeight="38.0" prefWidth="152.0" style="-fx-background-color: #FF5733;" text="Contact" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Georgia" size="20.0" />
+            </font>
+        </Button>
+      <Button fx:id="roombooking" alignment="CENTER" contentDisplay="CENTER" layoutX="285.0" layoutY="186.0" mnemonicParsing="false" onAction="#roombookingaction" prefHeight="38.0" prefWidth="161.0" style="-fx-background-color: #FF5733;" text="Room Booking" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="20.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

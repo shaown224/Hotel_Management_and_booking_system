@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.ArcTo?>
+<?import javafx.scene.shape.ClosePath?>
+<?import javafx.scene.shape.LineTo?>
+<?import javafx.scene.shape.MoveTo?>
+<?import javafx.scene.shape.Path?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.shape.QuadCurveTo?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="503.0" prefWidth="697.0" style="-fx-background-color: #084f7f;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Administration.Reception">
+    <children>
+        <AnchorPane layoutX="26.0" layoutY="14.0" prefHeight="471.0" prefWidth="605.0">
+            <children>
+                <Button fx:id="custInfo" layoutX="7.0" layoutY="197.0" mnemonicParsing="false" onAction="#fucncustInfo" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: trasparent; -fx-border-color: white; -fx-border-width: 0px 0px 4px 0px; -fx-border-radius: 150px;" text="Customer Info" textFill="WHITE" />
+                <Button fx:id="managerInfo" layoutX="7.0" layoutY="236.0" mnemonicParsing="false" onAction="#funcmanagerInfo" prefHeight="25.0" prefWidth="126.0" style="-fx-border-color: white; -fx-background-color: trasparent; -fx-border-width: 0px 0px 4px 0px; -fx-border-radius: 150px;" text="Manager Info" textFill="WHITE" />
+                <Button fx:id="checkOut" layoutX="7.0" layoutY="277.0" mnemonicParsing="false" onAction="#funcCheckOut" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: trasparent; -fx-border-color: white; -fx-border-width: 0px 0px 4px 0px; -fx-border-radius: 150px;" text="Check Out" textFill="WHITE" />
+                <Button fx:id="upCheckStatus" layoutX="7.0" layoutY="316.0" mnemonicParsing="false" onAction="#funcupCheckStatus" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: trasparent; -fx-border-color: white; -fx-border-width: 0px 0px 4px 0px; -fx-border-radius: 150px;" text="Update Check Status" textFill="#fff8f8" />
+                <Button fx:id="upRoomStatus" layoutX="7.0" layoutY="356.0" mnemonicParsing="false" onAction="#funcupRoomStatus" style="-fx-background-color: trasparent; -fx-border-color: white; -fx-border-width: 0px 0px 4px 0px; -fx-border-radius: 150px;" text="Update Room Status" textFill="#fff9f9" />
+                <Button fx:id="logOut" layoutX="7.0" layoutY="394.0" mnemonicParsing="false" onAction="#funcLogOut" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: trasparent; -fx-border-color: white; -fx-border-width: 0px 0px 4px 0px; -fx-border-radius: 150px;" text="Log Out" textFill="#fff7f7" />
+                <Button fx:id="empInfo" layoutX="7.0" layoutY="157.0" mnemonicParsing="false" onAction="#funcempInfo" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: trasparent; -fx-border-color: white; -fx-border-width: 0px 0px 4px 0px; -fx-border-radius: 150px;" text="All Employee Info" textFill="WHITE" />
+                <Button fx:id="dept" layoutX="7.0" layoutY="117.0" mnemonicParsing="false" onAction="#funcDept" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: trasparent; -fx-border-color: white; -fx-border-width: 0pc 0pc 4px 0px; -fx-border-radius: 150px;" text="Department" textFill="#fffbfb" />
+                <Button fx:id="room" layoutX="7.0" layoutY="81.0" mnemonicParsing="false" onAction="#funcRoom" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: trasparent; -fx-border-color: white; -fx-border-width: 0px 0px 4px 0px; -fx-border-radius: 150px;" text="Room" textFill="WHITE" />
+                <Button fx:id="newCustomer" layoutX="8.0" layoutY="45.0" mnemonicParsing="false" onAction="#addNewCustomer" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: trasparent; -fx-border-color: white; -fx-border-width: 0px 0px 4px 0px; -fx-border-radius: 150px;" text="Add new customer" textFill="WHITE" />
+                <ImageView fitHeight="538.0" fitWidth="798.0" layoutX="158.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Image/back.jpg" />
+                    </image>
+                </ImageView>
+                <Button fx:id="backBTN" layoutX="7.0" layoutY="430.0" mnemonicParsing="false" onAction="#backAction" prefHeight="27.0" prefWidth="126.0" style="-fx-background-color: trasparent; -fx-border-color: white; -fx-border-width: 0px 0px 4px 0px; -fx-border-radius: 150px;" text="Back " textFill="WHITE" />
+            <Text layoutX="168.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Seashore">
+               <font>
+                  <Font name="Baskerville Old Face" size="74.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="0.3222748815165877" endY="1.0" startX="0.3175355450236967">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.21160000562667847" green="0.439300000667572" blue="0.46000000834465027" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <QuadCurve controlX="-50.0" controlY="-100.0" endX="50.0" layoutX="17.0" layoutY="514.0" startX="-50.0" stroke="#141414" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.3459715639810427">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </QuadCurve>
+            </children>
+        </AnchorPane>
+      <Path layoutX="-122.0" layoutY="-161.0" stroke="BLACK" strokeType="INSIDE">
+          <elements>
+              <MoveTo x="100.0" />
+              <LineTo x="150.0" y="50.0" />
+              <ArcTo radiusX="30.0" radiusY="25" x="200.0" y="100.0" />
+              <QuadCurveTo controlX="300.0" controlY="300.0" y="150.0" />
+              <ClosePath />
+          </elements>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.7582938388625592">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Path>
+    </children>
+</AnchorPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="493.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <top>
+      <AnchorPane fx:id="anchorpane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Ellipse fill="#011b28" layoutX="-10.0" layoutY="240.0" radiusX="133.0" radiusY="297.0" stroke="BLACK" strokeType="INSIDE" />
+            <ImageView fx:id="image" fitHeight="500.0" fitWidth="741.0" layoutX="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/back.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="5.0" layoutY="-18.0" prefHeight="126.0" prefWidth="510.0" text="Hotel Seashore">
+               <font>
+                  <Font size="54.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.27014218009478663">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.7631579041481018" green="0.7158138155937195" blue="0.05299707502126694" opacity="0.7699999809265137" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Button fx:id="administration" layoutX="522.0" layoutY="26.0" mnemonicParsing="false" onAction="#Administration" prefHeight="37.0" prefWidth="103.0" style="-fx-border-color: Black; -fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent;" text="Admin" textFill="#f5f5f5">
+               <font>
+                  <Font name="Cambria Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancel" layoutX="654.0" layoutY="452.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="29.0" prefWidth="81.0" style="-fx-background-color: #909090;" text="Exit">
+               <font>
+                  <Font name="Cambria Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="customer" layoutX="638.0" layoutY="26.0" mnemonicParsing="false" onAction="#Customer" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: black;" text="Customer" textFill="#e4d9d9">
+               <font>
+                  <Font name="Cambria Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

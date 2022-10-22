@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.MeshView?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Customer.Customerdeshboard">
+    <children>
+        <Ellipse fill="#11181e" layoutX="80.0" layoutY="248.0" radiusX="157.0" radiusY="295.0" stroke="BLACK" strokeType="INSIDE" />
+        <ImageView cache="true" fitHeight="509.0" fitWidth="730.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Image/back.jpg" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </ImageView>
+        <Button fx:id="closeBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="821.0" layoutY="447.0" mnemonicParsing="false" onAction="#ClosebtnAction" prefHeight="33.0" prefWidth="75.0" style="-fx-background-color: #FF5733;" text="Close" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Georgia" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="ContactBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="591.0" layoutY="420.0" mnemonicParsing="false" onAction="#ContactBtnAction" prefHeight="46.0" prefWidth="131.0" style="-fx-background-color: trasparent; -fx-border-color: black; -fx-border-width: 0px 0px 4px 0px; -fx-border-radius: 150px;" text="Log out" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+            <font>
+                <Font name="Baskerville Old Face" size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="view_room" alignment="CENTER" contentDisplay="CENTER" layoutX="155.0" layoutY="333.0" mnemonicParsing="false" onAction="#setView_roomgaction" prefHeight="46.0" prefWidth="131.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 4px 0px; -fx-border-radius: 150px;" text="Available Room" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="444.0">
+            <font>
+                <Font name="Baskerville Old Face" size="16.0" />
+            </font>
+        </Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="397.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="131.0" style="-fx-background-color: trasparent; -fx-border-color: black; -fx-border-radius: 150px; -fx-border-width: 0px 0px 4px 0px;" text="Booking Confirm" textAlignment="JUSTIFY" textFill="#fff7f7">
+            <font>
+                <Font name="Baskerville Old Face" size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="roombooking" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="333.0" mnemonicParsing="false" onAction="#roombookingaction" prefHeight="46.0" prefWidth="131.0" style="-fx-background-color: trasparent; -fx-border-color: black; -fx-border-width: 0px 0px 4px 0px; -fx-border-radius: 150px;" text="Room Booking" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Baskerville Old Face" size="17.0" />
+            </font>
+        </Button>
+        <MeshView layoutX="70.0" layoutY="165.0" />
+        <Text layoutX="-56.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Seashore" textAlignment="CENTER" wrappingWidth="391.13671875">
+            <font>
+                <Font name="Baskerville Old Face" size="73.0" />
+            </font>
+            <fill>
+                <LinearGradient endX="0.6872037914691943" endY="1.0" startX="0.6587677725118484" startY="0.4312796208530806">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.3197999894618988" green="0.6605671644210815" blue="0.7799999713897705" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Text>
+    </children>
+    <effect>
+        <ColorAdjust brightness="-0.03" />
+    </effect>
+</AnchorPane>

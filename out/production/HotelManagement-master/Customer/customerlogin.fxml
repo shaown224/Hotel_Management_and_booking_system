@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Customer.Customerlogin">
+    <left>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="488.0" fitWidth="887.0" layoutX="-1.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Image/back.jpg" />
+                    </image>
+                </ImageView>
+            <Pane layoutX="365.0" layoutY="74.0" prefHeight="354.0" prefWidth="318.0" style="-fx-background-color: trasparent;">
+               <children>
+                      <Label layoutX="-220.0" layoutY="-29.0" prefHeight="87.0" prefWidth="524.0" text="Hotel Seashore ">
+                          <font>
+                              <Font name="Baskerville Old Face" size="70.0" />
+                          </font>
+                     <textFill>
+                        <LinearGradient endX="0.7914691943127962" endY="1.0" startX="0.8009478672985781">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.11569999903440475" green="0.12523333728313446" blue="0.12999999523162842" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.46646341463414637">
+                                 <color>
+                                    <Color red="0.11569999903440475" green="0.12523333728313446" blue="0.12999999523162842" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.5917294156163039">
+                                 <color>
+                                    <Color red="0.11569999903440475" green="0.12523333728313446" blue="0.12999999523162842" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.10000000149011612" green="0.38928571343421936" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                      </Label>
+               </children>
+            </Pane>
+              <AnchorPane layoutX="533.0" layoutY="8.0" prefHeight="200.0" prefWidth="200.0">
+                  <children>
+                      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  </children>
+              </AnchorPane>
+                <Label fx:id="usernamelabel" layoutX="33.0" layoutY="280.0" prefHeight="58.0" prefWidth="111.0" text="Email :" textFill="#fffffff2">
+                    <font>
+                        <Font name="Baskerville Old Face" size="21.0" />
+                    </font>
+                </Label>
+            <Label fx:id="loginbtnlabel" layoutX="41.0" layoutY="423.0" prefHeight="17.0" prefWidth="210.0" />
+                <Label fx:id="passwordlabel" layoutX="33.0" layoutY="359.0" prefHeight="58.0" prefWidth="123.0" text="Password :" textFill="#fcfffbf2">
+                    <font>
+                        <Font name="System Bold" size="21.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="userTextField" layoutX="36.0" layoutY="338.0" prefHeight="25.0" prefWidth="277.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 4px 0px;">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </TextField>
+                <Button fx:id="loginbtn" layoutX="27.0" layoutY="452.0" mnemonicParsing="false" onAction="#loginbtnAction" prefHeight="26.0" prefWidth="58.0" style="-fx-background-color: trasparent;" text="Login" textFill="#fff7f7">
+               <font>
+                  <Font name="Baskerville Old Face" size="13.0" />
+               </font>
+            </Button>
+                <Button fx:id="regBTN" layoutX="174.0" layoutY="452.0" mnemonicParsing="false" onAction="#RegBtnAction" style="-fx-background-color: trasparent;" text="Signup" textFill="#f7fdff">
+               <font>
+                  <Font name="Baskerville Old Face" size="13.0" />
+               </font></Button>
+                <Label fx:id="passwordlabel1" layoutX="95.0" layoutY="449.0" prefHeight="30.0" prefWidth="77.0" text="No account?" textFill="#fff7f7f2">
+                    <font>
+                        <Font name="Baskerville Old Face" size="14.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="passwordField" layoutX="35.0" layoutY="414.0" prefHeight="28.0" prefWidth="278.0" style="-fx-background-color: trasparent; -fx-border-color: white; -fx-border-width: 0px 0px 4px 0px;">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </PasswordField>
+            </children>
+        </AnchorPane>
+    </left>
+</BorderPane>
